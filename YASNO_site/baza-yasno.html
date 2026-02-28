@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База отдыха "Ясно"</title>
+    <link rel="stylesheet" href="baza-yasno.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">База "Ясно"</div>
+            <ul class="nav-menu">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#rooms">Номера</a></li>
+                <li><a href="#food">Питание</a></li>
+                <li><a href="#sauna">Баня</a></li>
+                <li><a href="#sports">Спортивные площадки</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#location">Контакты</a></li>
+            </ul>
+            <div class="header-phones">
+                <a href="tel:+79786588555">+7 978 658 85 55</a>
+                <a href="tel:+79110168777">+7 911 016 87 77</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>«ЯСНО» — пространство, где возможно всё</h2>
+            <div class="about-intro-full">
+                <p>Мы создали «ЯСНО» не как просто место на карте, а как состояние. Это возможность наполниться чистой энергией природы, укрепить тело и дух, раскрыть свой талант и уехать домой обновлённым.</p>
+                <p>Наша задача — дать людям точку опоры и вдохновения. Здесь, в тишине соснового бора у самого моря, каждый находит своё:</p>
+            </div>
+            <div class="about-layout">
+                <div class="about-photo">
+                    <div class="photo-gallery">
+                        <div class="gallery-container">
+                            <img src="images/base.jpg" class="about-gallery-image active" alt="База отдыха">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-features">
+                        <div class="about-card">
+                            <h3>Уединение</h3>
+                            <p>Для тех, кто ищет тишину: ретриты вдали от городского шума, где можно услышать только ветер в соснах и свой внутренний голос.</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>Движение</h3>
+                            <p>Для тех, кто любит ритм: масштабные фестивали с живой музыкой, танцами и энергией, объединяющей сотни сердец.</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>Осознанность</h3>
+                            <p>Для тех, кто готов к глубине: семинары и мастер-классы по йоге, аюрведе и медитации под руководством мастеров.</p>
+                        </div>
+                        <div class="about-card">
+                            <h3>Единство</h3>
+                            <p>Для команд и единомышленников: творческие сборы спортсменов, танцоров, музыкантов, где рождаются новые идеи и крепнет дух.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-carousel">
+        <div class="video-carousel-fullwidth">
+            <button class="carousel-control prev" onclick="moveVideoCarousel(-1)">‹</button>
+            <div class="video-carousel-wrapper">
+                <div class="video-carousel-track">
+                    <div class="video-item">
+                        <iframe src="https://vk.com/video_ext.php?oid=-69348260&id=171471080&hd=2" width="100%" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://vk.com/video_ext.php?oid=-69348260&id=171471192&hd=2" width="100%" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://vk.com/video_ext.php?oid=-69348260&id=171471319&hd=2" width="100%" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://vk.com/video_ext.php?oid=-69348260&id=456239017&hd=2" width="100%" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control next" onclick="moveVideoCarousel(1)">›</button>
+        </div>
+    </section>
+
+    <section id="photo-carousel">
+        <div class="fullscreen-carousel">
+            <button class="carousel-control prev" onclick="movePhotoCarousel(-1)">‹</button>
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <img src="images/PH1.jpg" alt="Фото 1" onclick="openImageModal(this.src)">
+                    <img src="images/PH2.jpg" alt="Фото 2" onclick="openImageModal(this.src)">
+                    <img src="images/PH3.jpg" alt="Фото 3" onclick="openImageModal(this.src)">
+                    <img src="images/PH4.jpg" alt="Фото 4" onclick="openImageModal(this.src)">
+                    <img src="images/PH5.jpg" alt="Фото 5" onclick="openImageModal(this.src)">
+                    <img src="images/PH6.jpg" alt="Фото 6" onclick="openImageModal(this.src)">
+                    <img src="images/PH7.jpg" alt="Фото 7" onclick="openImageModal(this.src)">
+                    <img src="images/PH9.jpg" alt="Фото 9" onclick="openImageModal(this.src)">
+                    <img src="images/PH10.jpg" alt="Фото 10" onclick="openImageModal(this.src)">
+                </div>
+            </div>
+            <button class="carousel-control next" onclick="movePhotoCarousel(1)">›</button>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal" onclick="closeImageModal()">
+        <span class="image-modal-close">&times;</span>
+        <img src="" alt="Полноэкранное фото" id="modalImage">
+    </div>
+
+    <section id="rooms">
+        <div class="container">
+            <h2>Номера</h2>
+            <div class="rooms-description">
+                <p>Мы предлагаем вам не просто номер, а уютное пространство, где каждая деталь продумана для вашего отдыха. Наша база — как конструктор: вы можете забронировать размещение как для одного человека, так и номер до 8 гостей.</p>
+                <p>В вашем распоряжении 54 номера в скандинавском стиле. Интерьеры выполнены из натурального дерева, создавая атмосферу тепла и единения с природой.</p>
+            </div>
+            
+            <div class="rooms-gallery-centered">
+                <button class="gallery-btn prev" onclick="moveRoomsGallery(-1)">‹</button>
+                <div class="rooms-gallery-container">
+                    <div class="rooms-gallery-track">
+                        <img src="images/namber.jpg" class="rooms-gallery-image" alt="Номер 1">
+                        <img src="images/namber1.jpg" class="rooms-gallery-image" alt="Номер 2">
+                        <img src="images/namber3.jpg" class="rooms-gallery-image" alt="Номер 3">
+                        <img src="images/namber4.jpg" class="rooms-gallery-image" alt="Номер 4">
+                        <img src="images/namber5.jpg" class="rooms-gallery-image" alt="Номер 5">
+                        <img src="images/namber6.jpg" class="rooms-gallery-image" alt="Номер 6">
+                    </div>
+                </div>
+                <button class="gallery-btn next" onclick="moveRoomsGallery(1)">›</button>
+            </div>
+            
+            <div class="rooms-info-box">
+                <div class="info-section">
+                    <h3>В каждом номере:</h3>
+                    <ul>
+                        <li>Полный комплект мебели из натурального дерева</li>
+                        <li>Индивидуальный санузел (душ, туалет, горячая вода круглосуточно)</li>
+                        <li>Мягкое постельное белье и банные полотенца</li>
+                        <li>Эффективное отопление для комфортного проживания зимой</li>
+                        <li>Кондиционеры (в части номеров) для свежести в летний зной</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>Удобства на территории:</h3>
+                    <ul>
+                        <li>Бесплатный Wi-Fi на всей территории</li>
+                        <li>Современная стиральная машина</li>
+                        <li>Полностью оборудованная столовая посуда</li>
+                        <li>Бесплатная парковка для ваших автомобилей</li>
+                        <li>Общая зона с чайником и холодильником</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="food">
+        <div class="container">
+            <h2>Питание</h2>
+            <div class="food-intro">
+                <p>В Крыму всё вкусное — особенно наша еда!</p>
+            </div>
+            
+            <div class="food-menu">
+                <h3>Наше меню:</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-number">1</div>
+                        <h4>Классическое</h4>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-number">2</div>
+                        <h4>Веганское/вегетарианское меню</h4>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-number">3</div>
+                        <h4>Детское</h4>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-number">4</div>
+                        <h4>Индивидуальное</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="food-note">
+                <p>А если у вас есть особые пожелания — просто скажите, и мы договоримся 😊</p>
+            </div>
+        </div>
+        
+        <div class="sports-fullwidth-carousel">
+            <button class="carousel-control prev" onclick="moveFoodCarousel(-1)">‹</button>
+            <div class="sports-carousel-wrapper">
+                <div class="food-carousel-track-horizontal">
+                    <img src="images/eat1.jpg" alt="Блюдо 1" onclick="openImageModal(this.src)">
+                    <img src="images/eat2.jpg" alt="Блюдо 2" onclick="openImageModal(this.src)">
+                    <img src="images/eat3.jpg" alt="Блюдо 3" onclick="openImageModal(this.src)">
+                    <img src="images/eat4.jpg" alt="Блюдо 4" onclick="openImageModal(this.src)">
+                    <img src="images/eat5.jpg" alt="Блюдо 5" onclick="openImageModal(this.src)">
+                </div>
+            </div>
+            <button class="carousel-control next" onclick="moveFoodCarousel(1)">›</button>
+        </div>
+    </section>
+
+    <section id="sauna">
+        <div class="container">
+            <h2>Баня</h2>
+            <div class="sauna-content">
+                <div class="sauna-video">
+                    <iframe src="https://vk.com/video_ext.php?oid=-107672711&id=456239023&hd=2" width="100%" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="sauna-text">
+                    <p>Пришла пора проявить заботу о себе, наполниться теплом, укрепить здоровье и поднять настроение.</p>
+                    <p>Именно поэтому мы приготовили обновленный SPA-комплекс с зоной отдыха, камином и парной.</p>
+                    <p>Вас ждут ароматерапия, промасливание и парение душистыми вениками.</p>
+                    <p>Наши банные ритуалы созданы именно для того, чтобы вы почувствовали обновление и наполнились спокойствием и умиротворением.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sports">
+        <div class="container">
+            <h2>Спортивные площадки и залы</h2>
+            <div class="halls-list">
+                <div class="hall-item" onclick="toggleHall(this)">
+                    <div class="hall-header">
+                        <div class="hall-number">1</div>
+                        <h3>Главный трансформируемый зал<br>(450 м²)</h3>
+                    </div>
+                    <span class="hall-toggle">▼</span>
+                    <div class="hall-content">
+                        <div class="hall-content-inner">
+                            <p>Просторное помещение с высокими 8-метровыми потолками. Подходит для масштабных мероприятий: интенсивов, форумов, концертов и выставок. Пространство легко зонируется под любые задачи.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hall-item" onclick="toggleHall(this)">
+                    <div class="hall-header">
+                        <div class="hall-number">2</div>
+                        <h3>Лаунж-зал с панорамным видом на море<br>(300 м²)</h3>
+                    </div>
+                    <span class="hall-toggle">▼</span>
+                    <div class="hall-content">
+                        <div class="hall-content-inner">
+                            <p>Светлое пространство с панорамным остеклением для йоги, медитаций и творческих вечеров. Оснащен отоплением и системой «теплый пол» для комфорта круглый год.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hall-item" onclick="toggleHall(this)">
+                    <div class="hall-header">
+                        <div class="hall-number">3</div>
+                        <h3>Уютный зал для камерных мероприятий<br>(100 м²)</h3>
+                    </div>
+                    <span class="hall-toggle">▼</span>
+                    <div class="hall-content">
+                        <div class="hall-content-inner">
+                            <p>Универсальное пространство для тренингов, мастер-классов и занятий в малых группах.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hall-item" onclick="toggleHall(this)">
+                    <div class="hall-header">
+                        <div class="hall-number">4</div>
+                        <h3>Малая студия<br>(60 м²)</h3>
+                    </div>
+                    <span class="hall-toggle">▼</span>
+                    <div class="hall-content">
+                        <div class="hall-content-inner">
+                            <p>Камерное пространство для индивидуальных консультаций, личной терапии и мини-групп.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hall-item" onclick="toggleHall(this)">
+                    <div class="hall-header">
+                        <div class="hall-number">5</div>
+                        <h3>Открытая крытая терраса с видом на море<br>(300 м²)</h3>
+                    </div>
+                    <span class="hall-toggle">▼</span>
+                    <div class="hall-content">
+                        <div class="hall-content-inner">
+                            <p>Площадка для практик на свежем воздухе под крышей. Идеально для утренних занятий, дыхательных практик и танцев с видом на море в любую погоду.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hall-item" onclick="toggleHall(this)">
+                    <div class="hall-header">
+                        <div class="hall-number">6</div>
+                        <h3>Техническое оснащение</h3>
+                    </div>
+                    <span class="hall-toggle">▼</span>
+                    <div class="hall-content">
+                        <div class="hall-content-inner">
+                            <p>В наличии:</p>
+                            <p>• Профессиональная музыкальная и звуковая аппаратура.</p>
+                            <p>• Световое оборудование для создания атмосферы.</p>
+                            <p>• Проектор и флипчарты для презентаций и семинаров.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sports-fullwidth-carousel">
+            <button class="carousel-control prev" onclick="moveSportsCarousel(-1)">‹</button>
+            <div class="sports-carousel-wrapper">
+                <div class="sports-carousel-track-horizontal">
+                    <img src="images/dance1.jpg" alt="Зал 1" onclick="openImageModal(this.src)">
+                    <img src="images/dance2.jpg" alt="Зал 2" onclick="openImageModal(this.src)">
+                    <img src="images/dance3.jpg" alt="Зал 3" onclick="openImageModal(this.src)">
+                    <img src="images/we10.jpg" alt="Зал 4" onclick="openImageModal(this.src)">
+                </div>
+            </div>
+            <button class="carousel-control next" onclick="moveSportsCarousel(1)">›</button>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="reviews-links">
+                <a href="https://yandex.ru/maps/org/yasno/164419114193/reviews/" target="_blank" class="review-link">Все отзывы на Яндекс.Картах</a>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn">‹</button>
+                <div class="carousel">
+                    <div class="review-slide active">
+                        <div class="review">
+                            <p>«Отличное место для отдыха! Чистые номера, вкусная еда, приветливый персонал.»</p>
+                            <span>— Анна</span>
+                            <a href="https://yandex.ru/maps/org/yasno/164419114193/reviews/" target="_blank" class="review-source">Читать на Яндекс.Картах</a>
+                        </div>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review">
+                            <p>«Провели корпоратив, всё понравилось. Особенно баня и спортивные площадки!»</p>
+                            <span>— Михаил</span>
+                            <a href="https://yandex.ru/maps/org/yasno/164419114193/reviews/" target="_blank" class="review-source">Читать на Яндекс.Картах</a>
+                        </div>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review">
+                            <p>«Прекрасная природа, свежий воздух. Детям очень понравилось!»</p>
+                            <span>— Елена</span>
+                            <a href="https://yandex.ru/maps/org/yasno/164419114193/reviews/" target="_blank" class="review-source">Читать на Яндекс.Картах</a>
+                        </div>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review">
+                            <p>"Замечательное место для семейного отдыха. Всё очень чисто и ухожено."</p>
+                            <span>- Дмитрий</span>
+                            <a href="https://yandex.ru/maps/org/yasno/164419114193/reviews/" target="_blank" class="review-source">Читать на Яндекс.Картах</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="nextBtn">›</button>
+            </div>
+            <div class="carousel-dots" id="dotsContainer">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Телефоны</h3>
+                        <p><a href="tel:+79786588555">+7 978 658 85 55</a></p>
+                        <p><a href="tel:+79110168777">+7 911 016 87 77</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Мессенджеры</h3>
+                        <p><a href="https://t.me/yasno_retreat" target="_blank">Telegram: @yasno_retreat</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Социальные сети</h3>
+                        <p><a href="https://vk.com/baza_yasno" target="_blank">ВКонтакте</a></p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=33.558113%2C44.821980&mode=search&oid=164419114193&ol=biz&z=17" width="100%" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 База отдыха "Ясно". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div id="cat" class="cat">
+        <img src="images/kotik.png" alt="Милый котик">
+        <div class="cat-speech-bubble">Мрр! Приезжайте к нам! 🐾</div>
+    </div>
+
+    <script src="baza-yasno.js"></script>
+</body>
+</html>

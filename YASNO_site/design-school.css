@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #2d2d2d;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.03);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF7A00;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-menu a {
+    color: #2d2d2d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #FF7A00;
+}
+
+.nav-cta {
+    padding: 0.8rem 2rem;
+    background: transparent;
+    color: #FF7A00;
+    text-decoration: none;
+    border: 2px solid #FF7A00;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.nav-cta:hover {
+    background: #FF7A00;
+    color: white;
+}
+
+/* Hero Section */
+#hero {
+    padding: 180px 0 120px;
+    background: linear-gradient(135deg, #fff9f5 0%, #ffffff 100%);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.cta-button {
+    padding: 1.2rem 3rem;
+    background: #FF7A00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 20px rgba(255, 122, 0, 0.3);
+}
+
+.cta-button:hover {
+    background: #e66d00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(255, 122, 0, 0.4);
+}
+
+.hero-stats {
+    display: flex;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FF7A00;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher-photo-placeholder {
+    width: 100%;
+    max-width: 450px;
+    height: 550px;
+    background: linear-gradient(135deg, #fff5ed 0%, #ffe8d6 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF7A00;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 0 20px 60px rgba(255, 122, 0, 0.1);
+}
+
+/* Program Section */
+#program {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.program-card {
+    padding: 3rem;
+    background: #fafafa;
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+
+.program-card:hover {
+    background: #fff9f5;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 122, 0, 0.08);
+}
+
+.program-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FF7A00;
+    opacity: 0.3;
+    margin-bottom: 1.5rem;
+}
+
+.program-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.program-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* Benefits Section */
+#benefits {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #fff9f5 0%, #ffffff 100%);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.benefit-card {
+    padding: 2.5rem;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 122, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Teacher Section */
+#teacher {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+.teacher-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.teacher-info h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.teacher-info h3 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.teacher-title {
+    font-size: 1.2rem;
+    color: #FF7A00;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.teacher-experience {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.teacher-experience li {
+    padding: 1rem 0;
+    padding-left: 2rem;
+    position: relative;
+    font-size: 1.1rem;
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.teacher-experience li:last-child {
+    border-bottom: none;
+}
+
+.teacher-experience li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #FF7A00;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.teacher-photo-large {
+    display: flex;
+    justify-content: center;
+}
+
+.teacher-photo-placeholder.large {
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+}
+
+/* Reviews Section */
+#reviews {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #fff9f5 0%, #ffffff 100%);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.review-card {
+    padding: 3rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 122, 0, 0.1);
+}
+
+.review-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #2d2d2d;
+    margin-bottom: 2rem;
+}
+
+.review-author strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin-bottom: 0.3rem;
+}
+
+.review-author span {
+    font-size: 0.95rem;
+    color: #FF7A00;
+}
+
+/* Form Section */
+#form {
+    padding: 120px 0;
+    background: #1a1a1a;
+}
+
+#form h2 {
+    color: white;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.form-subtitle {
+    font-size: 1.2rem;
+    color: #999;
+    margin-bottom: 3rem;
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.application-form input {
+    padding: 1.2rem 1.5rem;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background: #2d2d2d;
+    color: white;
+    transition: all 0.3s;
+}
+
+.application-form input:focus {
+    outline: none;
+    border-color: #FF7A00;
+    background: #333;
+}
+
+.application-form input::placeholder {
+    color: #666;
+}
+
+.cta-button.full-width {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.form-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.form-benefits {
+    padding: 3rem;
+    background: #2d2d2d;
+    border-radius: 16px;
+}
+
+.form-benefits h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.form-benefits ul {
+    list-style: none;
+}
+
+.form-benefits li {
+    padding: 1rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #ccc;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #333;
+}
+
+.form-benefits li:last-child {
+    border-bottom: none;
+}
+
+.form-benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #FF7A00;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    padding: 4rem 0;
+    background: #0d0d0d;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF7A00;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FF7A00;
+}
+
+.footer-contacts {
+    text-align: right;
+}
+
+.footer-contacts p {
+    color: #999;
+    margin: 0.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    .hero-grid {
+        gap: 60px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .nav-menu {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        gap: 2rem;
+    }
+    
+    .program-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .teacher-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .footer-contacts {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    #hero {
+        padding: 140px 0 80px;
+    }
+    
+    section {
+        padding: 80px 0;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-card,
+    .benefit-card,
+    .review-card {
+        padding: 2rem;
+    }
+    
+    .teacher-photo-placeholder {
+        height: 400px;
+    }
+    
+    .teacher-photo-placeholder.large {
+        height: 450px;
+    }
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Занятия йогой - База отдыха "Ясно"</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: none !important;
+            background-color: #f5f5f5;
+        }
+        #hero {
+            background-image: none !important;
+            background: linear-gradient(135deg, rgba(221, 160, 221, 0.3) 0%, rgba(221, 160, 221, 0.5) 100%);
+        }
+        #yoga-main {
+            background: rgba(120, 219, 226, 0.3) !important;
+        }
+        header {
+            background: rgba(90, 180, 190, 1) !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">База "Ясно"</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#rooms">Номера</a></li>
+                <li><a href="index.html#food">Питание</a></li>
+                <li><a href="index.html#sauna">Баня</a></li>
+                <li><a href="yoga.html">Йога</a></li>
+                <li><a href="stoimost.html">Стоимость</a></li>
+                <li><a href="index.html#sports">Спортивные площадки</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="index.html#location">Контакты</a></li>
+            </ul>
+            <div class="header-phones">
+                <a href="tel:+79786588555">+7 978 658 85 55</a>
+                <a href="tel:+79110168777">+7 911 016 87 77</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="yoga-main">
+        <div class="container">
+            <h2>Занятия йогой</h2>
+            
+            <div class="yoga-intro">
+                <p>Йога на берегу моря в Крыму — это уникальная возможность соединиться с природой и обрести внутреннюю гармонию. Наши занятия проходят в окружении соснового бора с видом на море, создавая идеальную атмосферу для практики.</p>
+            </div>
+
+            <div class="yoga-intro-carousel">
+                <button class="carousel-control prev" onclick="moveYogaIntroCarousel(-1)">‹</button>
+                <div class="yoga-intro-carousel-wrapper">
+                    <div class="yoga-intro-carousel-track">
+                        <img src="images/lar1.jpg" alt="Йога 1" onclick="openImageModal(this.src)">
+                        <img src="images/lar2.jpg" alt="Йога 2" onclick="openImageModal(this.src)">
+                        <img src="images/lar3.jpg" alt="Йога 3" onclick="openImageModal(this.src)">
+                        <img src="images/lar4.jpg" alt="Йога 4" onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+                <button class="carousel-control next" onclick="moveYogaIntroCarousel(1)">›</button>
+            </div>
+
+            <div class="yoga-instructors">
+                <h3>Наши инструкторы</h3>
+                <div class="instructor-layout">
+                    <div class="instructor-photos">
+                        <div class="instructor-photo-large">
+                            <img src="images/larisa1.jpg" alt="Лариса Топоркова">
+                        </div>
+                        <div class="instructor-photo-large">
+                            <img src="images/larisa2.jpg" alt="Лариса Топоркова">
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h4>Лариса Топоркова</h4>
+                        
+                        <p>Я — учитель йоги из Москвы, психолог и специалист по аюрведе.</p>
+                        
+                        <p>Преподаю с 2007 года — уже 19 лет сопровождаю людей на пути к здоровью, внутреннему балансу и осознанной жизни.</p>
+                        
+                        <p>Мой путь в йоге начался более 35 лет назад с личной практики. Со временем глубокий интерес к телу, психике и природе человека стал профессией и делом жизни.</p>
+                        
+                        <p>Я обучалась в России, Индии и США, изучая различные направления и традиции йоги, философию, дыхательные техники, методы восстановления и терапевтические подходы.</p>
+                        
+                        <div class="instructor-directions">
+                            <h5>Мои направления</h5>
+                            <p>Я сертифицированный преподаватель:</p>
+                            <ul>
+                                <li>Кундалини-йоги</li>
+                                <li>Хатха-йоги</li>
+                                <li>Йога-терапии</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="yoga-schedule">
+                <h3>Расписание занятий</h3>
+                
+                <div class="schedule-section">
+                    <div class="schedule-period-header" onclick="toggleSchedule(this)">
+                        <h4 class="schedule-period">УТРО</h4>
+                        <span class="schedule-toggle">▼</span>
+                    </div>
+                    <div class="schedule-content">
+                        <div class="schedule-grid">
+                            <div class="schedule-item">
+                                <div class="schedule-name">Йога — зарядка</div>
+                                <div class="schedule-time">Ежедневно 6:00</div>
+                                <div class="schedule-duration">60 минут</div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-name">Йога и медитация</div>
+                                <div class="schedule-time">Среда, пятница 10:00</div>
+                                <div class="schedule-duration">60 минут</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-section">
+                    <div class="schedule-period-header" onclick="toggleSchedule(this)">
+                        <h4 class="schedule-period">ДЕНЬ</h4>
+                        <span class="schedule-toggle">▼</span>
+                    </div>
+                    <div class="schedule-content">
+                        <div class="schedule-grid">
+                            <div class="schedule-item">
+                                <div class="schedule-name">Разминка для позвоночника и суставов, медитация</div>
+                                <div class="schedule-time">Ежедневно 16:00</div>
+                                <div class="schedule-duration">45 минут</div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-name">Йога и медитация</div>
+                                <div class="schedule-time">Воскресенье 16:00</div>
+                                <div class="schedule-duration">90 минут</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-section">
+                    <div class="schedule-period-header" onclick="toggleSchedule(this)">
+                        <h4 class="schedule-period">ВЕЧЕР</h4>
+                        <span class="schedule-toggle">▼</span>
+                    </div>
+                    <div class="schedule-content">
+                        <div class="schedule-grid">
+                            <div class="schedule-item">
+                                <div class="schedule-name">Йога и медитация</div>
+                                <div class="schedule-time">Вторник, пятница 19:00</div>
+                                <div class="schedule-duration">60 минут</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="yoga-prices">
+                <h3>Стоимость занятий</h3>
+                
+                <div class="price-section">
+                    <div class="price-category-header" onclick="togglePrice(this)">
+                        <h4 class="price-category">ВЗРОСЛЫЕ</h4>
+                        <span class="price-toggle">▼</span>
+                    </div>
+                    <div class="price-content">
+                        <div class="prices-grid">
+                            <div class="price-card">
+                                <h4>Разовое посещение</h4>
+                                <div class="price">1 000 ₽</div>
+                            </div>
+                            <div class="price-card">
+                                <h4>Разовое посещение льготный</h4>
+                                <div class="price">700 ₽</div>
+                            </div>
+                            <div class="price-card">
+                                <h4>Абонемент 8 занятий</h4>
+                                <div class="price">4 000 ₽</div>
+                            </div>
+                            <div class="price-card">
+                                <h4>Абонемент 1 месяц</h4>
+                                <div class="price">5 000 ₽</div>
+                            </div>
+                            <div class="price-card">
+                                <h4>Абонемент 1 месяц льготный</h4>
+                                <div class="price">3 000 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-section">
+                    <div class="price-category-header" onclick="togglePrice(this)">
+                        <h4 class="price-category">ДЕТИ</h4>
+                        <span class="price-toggle">▼</span>
+                    </div>
+                    <div class="price-content">
+                        <div class="prices-grid">
+                            <div class="price-card">
+                                <h4>Одно занятие</h4>
+                                <div class="price">300 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-section">
+                    <div class="price-category-header" onclick="togglePrice(this)">
+                        <h4 class="price-category">ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</h4>
+                        <span class="price-toggle">▼</span>
+                    </div>
+                    <div class="price-content">
+                        <div class="prices-grid">
+                            <div class="price-card">
+                                <h4>1 занятие</h4>
+                                <div class="price">5 000 ₽</div>
+                            </div>
+                            <div class="price-card">
+                                <h4>5 занятий</h4>
+                                <div class="price">20 000 ₽</div>
+                            </div>
+                            <div class="price-card">
+                                <h4>10 занятий</h4>
+                                <div class="price">30 000 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-info">
+                    <p>Занятия проходят в зале ЯСНО и онлайн.</p>
+                    <p>Онлайн занятия проходят в Zoom.</p>
+                    <p>Запись сохраняется:</p>
+                    <ul>
+                        <li>на сутки в Телеграм канале ЯСНО</li>
+                        <li>навсегда в Клубе Здоровья Ларисы Топорковой</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="yoga-contact">
+                <h3>Записаться на занятие</h3>
+                <p>Для записи на занятия йогой свяжитесь с нами по телефону или через мессенджеры:</p>
+                <div class="contact-buttons">
+                    <a href="tel:+79786588555" class="contact-btn">+7 978 658 85 55</a>
+                    <a href="https://t.me/blagoyoga" target="_blank" class="contact-btn">Telegram @blagoyoga</a>
+                    <a href="https://t.me/yasno_retreat_crimea" target="_blank" class="contact-btn">Telegram @yasno_retreat_crimea</a>
+                    <a href="https://vk.com/baza_yasno" target="_blank" class="contact-btn">ВКонтакте</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 База отдыха "Ясно". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div id="cat" class="cat">
+        <img src="images/kotik.png" alt="Милый котик">
+        <div class="cat-speech-bubble">Мрр! Приезжайте к нам! 🐾</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

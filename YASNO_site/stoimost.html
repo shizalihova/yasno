@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоимость услуг - База отдыха "Ясно"</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: none !important;
+            background-color: #f5f5f5;
+        }
+        #hero {
+            background-image: none !important;
+            background: linear-gradient(135deg, rgba(221, 160, 221, 0.3) 0%, rgba(221, 160, 221, 0.5) 100%);
+        }
+        #stoimost-main {
+            background: rgba(197, 208, 230, 0.3) !important;
+        }
+        header {
+            background: rgba(160, 175, 200, 1) !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">База "Ясно"</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#rooms">Номера</a></li>
+                <li><a href="index.html#food">Питание</a></li>
+                <li><a href="index.html#sauna">Баня</a></li>
+                <li><a href="yoga.html">Йога</a></li>
+                <li><a href="stoimost.html">Стоимость</a></li>
+                <li><a href="index.html#sports">Спортивные площадки</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="index.html#location">Контакты</a></li>
+            </ul>
+            <div class="header-phones">
+                <a href="tel:+79786588555">+7 978 658 85 55</a>
+                <a href="tel:+79110168777">+7 911 016 87 77</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="stoimost-main">
+        <div class="container">
+            
+            <!-- Призыв к действию в начале -->
+            <div class="stoimost-cta">
+                <h3>Для групп и организаторов — специальные условия</h3>
+                <p class="cta-subtitle">Гибкие условия проживания и аренды для индивидуальных гостей и групп любого размера</p>
+                
+                <div class="cta-included">
+                    <div class="cta-benefits">
+                        <h4>В стоимость включено:</h4>
+                        <p>Залы и площадки • Всё оборудование • Вода • Парковка • Wi-Fi • Номера • Столовая и зал • Отопление зимой</p>
+                    </div>
+                    
+                    <div class="cta-special">
+                        <p>Организаторы групп живут бесплатно</p>
+                    </div>
+                </div>
+                
+                <p class="cta-call">Свяжитесь с нами для обсуждения индивидуальных условий</p>
+                <button class="contact-main-btn" onclick="openContactModal()">Связаться</button>
+            </div>
+
+            <!-- Зима -->
+            <div class="stoimost-season">
+                <div class="season-header winter" onclick="toggleSeason(this)">
+                    <h3>ЗИМА (октябрь — май)</h3>
+                    <span class="season-toggle">▼</span>
+                </div>
+
+                <div class="season-content">
+
+                <!-- Проживание без питания -->
+                <div class="stoimost-category">
+                    <h4>Проживание без питания</h4>
+                    
+                    <div class="stoimost-grid">
+                        <div class="stoimost-card">
+                            <h5>Взрослые</h5>
+                            <div class="stoimost-price">1 500 ₽</div>
+                            <p>1 человек в сутки</p>
+                        </div>
+                        
+                        <div class="stoimost-card">
+                            <h5>Взрослые (группа)</h5>
+                            <div class="stoimost-price">1 000 ₽</div>
+                            <p>2 и более человек в сутки</p>
+                        </div>
+                        
+                        <div class="stoimost-card">
+                            <h5>Дети до 3 лет</h5>
+                            <div class="stoimost-price">Бесплатно</div>
+                            <p>При проживании с родителями</p>
+                        </div>
+                        
+                        <div class="stoimost-card">
+                            <h5>Дети до 12 лет</h5>
+                            <div class="stoimost-price">500 ₽</div>
+                            <p>В сутки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Лето -->
+            <div class="stoimost-season">
+                <div class="season-header summer" onclick="toggleSeason(this)">
+                    <h3>ЛЕТО (июнь — сентябрь)</h3>
+                    <span class="season-toggle">▼</span>
+                </div>
+
+                <div class="season-content">
+                    <div class="stoimost-category">
+                        <h4>Проживание без питания</h4>
+                        
+                        <div class="stoimost-grid">
+                            <div class="stoimost-card">
+                                <h5>Взрослые</h5>
+                                <div class="stoimost-price">2 500 ₽</div>
+                                <p>В сутки с человека</p>
+                            </div>
+                            
+                            <div class="stoimost-card">
+                                <h5>Дети до 3 лет</h5>
+                                <div class="stoimost-price">Бесплатно</div>
+                                <p>При проживании с родителями</p>
+                            </div>
+                            
+                            <div class="stoimost-card">
+                                <h5>Дети 3—6 лет</h5>
+                                <div class="stoimost-price">1 000 ₽</div>
+                                <p>В сутки</p>
+                            </div>
+                            
+                            <div class="stoimost-card">
+                                <h5>Дети 7—12 лет</h5>
+                                <div class="stoimost-price">2 000 ₽</div>
+                                <p>В сутки</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stoimost-category">
+                        <h4>Проживание с питанием</h4>
+                        
+                        <div class="stoimost-grid">
+                            <div class="stoimost-card highlight">
+                                <h5>Взрослые</h5>
+                                <div class="stoimost-price">3 000 ₽</div>
+                                <p>В сутки с человека</p>
+                            </div>
+                            
+                            <div class="stoimost-card highlight">
+                                <h5>Дети до 3 лет</h5>
+                                <div class="stoimost-price">Бесплатно</div>
+                                <p>При проживании с родителями</p>
+                            </div>
+                            
+                            <div class="stoimost-card highlight">
+                                <h5>Дети 3—6 лет</h5>
+                                <div class="stoimost-price">1 500 ₽</div>
+                                <p>В сутки</p>
+                            </div>
+                            
+                            <div class="stoimost-card highlight">
+                                <h5>Дети 7—12 лет</h5>
+                                <div class="stoimost-price">2 500 ₽</div>
+                                <p>В сутки</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stoimost-note">
+                            <p><strong>В стоимость включено:</strong> залы и площадки, всё оборудование, вода, парковка, Wi-Fi, номера, столовая и зал. Зимой в номерах и зале есть отопление.</p>
+                            <p><strong>Организаторы групп живут бесплатно.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Аренда -->
+            <div class="stoimost-section">
+                <h3>Аренда</h3>
+                
+                <div class="stoimost-grid">
+                    <div class="stoimost-card rental">
+                        <h5>Зал без проживания</h5>
+                        <div class="stoimost-price">2 500 ₽</div>
+                        <p>В час</p>
+                    </div>
+                    
+                    <div class="stoimost-card rental">
+                        <h5>Баня на дровах</h5>
+                        <div class="stoimost-price">Уточнить</div>
+                        <p>Стоимость у администраторов</p>
+                    </div>
+                    
+                    <div class="stoimost-card rental">
+                        <h5>Столовая без кухни</h5>
+                        <div class="stoimost-price">1 500 ₽</div>
+                        <p>В час</p>
+                    </div>
+                    
+                    <div class="stoimost-card rental">
+                        <h5>Столовая с кухней</h5>
+                        <div class="stoimost-price">2 500 ₽</div>
+                        <p>В час</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Регулярные мероприятия -->
+            <div class="stoimost-section">
+                <h3>Регулярные мероприятия</h3>
+                
+                <div class="services-list">
+                    <div class="service-item">
+                        <p>Занятия йогой со взрослыми, детьми и семейная йога</p>
+                    </div>
+                    <div class="service-item">
+                        <p>Аюрведическое промасливание (абхьянга) с профессиональными маслами в бане</p>
+                    </div>
+                    <div class="service-item">
+                        <p>Консультации специалиста Аюрведы</p>
+                    </div>
+                    <div class="service-item">
+                        <p>Организация мероприятий</p>
+                    </div>
+                    <div class="service-item">
+                        <p>Творческие мастер-классы</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Условия бронирования -->
+            <div class="stoimost-section">
+                <h3>Условия бронирования</h3>
+                
+                <div class="stoimost-conditions">
+                    <div class="condition-block">
+                        <div class="condition-icon">💳</div>
+                        <h4>Предоплата</h4>
+                        <ul>
+                            <li>При бронировании — 30%</li>
+                            <li>За неделю до заезда — +20%</li>
+                            <li>Для больших групп — специальные условия предоплаты, обсуждаем при бронировании</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="condition-block">
+                        <div class="condition-icon">🕐</div>
+                        <h4>Время заезда</h4>
+                        <ul>
+                            <li>Заселение с 12:00</li>
+                            <li>Выезд до 10:00</li>
+                            <li>При необходимости время можем корректировать</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 База отдыха "Ясно". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div id="cat" class="cat">
+        <img src="images/kotik.png" alt="Милый котик">
+        <div class="cat-speech-bubble">Мрр! Приезжайте к нам! 🐾</div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-modal-content">
+            <span class="contact-modal-close" onclick="closeContactModal()">&times;</span>
+            <h3>Свяжитесь с нами</h3>
+            <p>Выберите удобный способ связи</p>
+            <div class="contact-modal-buttons">
+                <a href="tel:+79786588555" class="contact-modal-btn phone">
+                    <span>+7 978 658 85 55</span>
+                </a>
+                <a href="tel:+79110168777" class="contact-modal-btn phone">
+                    <span>+7 911 016 87 77</span>
+                </a>
+                <a href="https://t.me/yasno_retreat_crimea" target="_blank" class="contact-modal-btn telegram">
+                    <span>Telegram</span>
+                </a>
+                <a href="https://vk.com/baza_yasno" target="_blank" class="contact-modal-btn vk">
+                    <span>ВКонтакте</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

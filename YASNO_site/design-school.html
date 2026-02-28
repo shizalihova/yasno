@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-школа дизайна — Станьте профессионалом за 6 месяцев</title>
+    <link rel="stylesheet" href="design-school.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Design School</div>
+            <ul class="nav-menu">
+                <li><a href="#program">Программа</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#teacher">Преподаватель</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+            </ul>
+            <a href="#form" class="nav-cta">Оставить заявку</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Станьте востребованным дизайнером за 6 месяцев</h1>
+                <p class="hero-subtitle">Освойте UI/UX дизайн с нуля. Соберите портфолио из 5 проектов. Получите первые заказы уже во время обучения</p>
+                <button class="cta-button" onclick="scrollToForm()">Записаться на курс</button>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">выпускников</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6 мес</div>
+                        <div class="stat-label">обучение</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">практика</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="teacher-photo-placeholder">
+                    <span>Фото преподавателя</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="program">
+        <div class="container">
+            <h2>Программа обучения</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <div class="program-number">01</div>
+                    <h3>Основы дизайна</h3>
+                    <p>Композиция, типографика, цвет, сетки. Изучите фундаментальные принципы визуального дизайна</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-number">02</div>
+                    <h3>UI дизайн</h3>
+                    <p>Figma, компоненты, дизайн-системы. Создавайте интерфейсы для веба и мобильных приложений</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-number">03</div>
+                    <h3>UX исследования</h3>
+                    <p>Аналитика, пользовательские сценарии, прототипирование. Проектируйте удобные продукты</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-number">04</div>
+                    <h3>Портфолио</h3>
+                    <p>5 реальных проектов в портфолио. Презентация работ, кейсы, поиск первых клиентов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <div class="container">
+            <h2>Почему выбирают нас</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Практический подход</h3>
+                    <p>Работаете над реальными проектами с первой недели обучения</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👨‍🏫</div>
+                    <h3>Личный наставник</h3>
+                    <p>Индивидуальная обратная связь по каждой работе</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <h3>Помощь с трудоустройством</h3>
+                    <p>Подготовка резюме, портфолио и сопровождение на собеседованиях</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Сертификат</h3>
+                    <p>Документ о прохождении курса для вашего портфолио</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="teacher">
+        <div class="container teacher-section">
+            <div class="teacher-info">
+                <h2>Ваш преподаватель</h2>
+                <h3>Анна Смирнова</h3>
+                <p class="teacher-title">Senior UI/UX Designer</p>
+                <ul class="teacher-experience">
+                    <li>10 лет опыта в дизайне</li>
+                    <li>Работала в Яндекс, Сбер, VK</li>
+                    <li>Автор 50+ успешных проектов</li>
+                    <li>Спикер на конференциях</li>
+                </ul>
+                <button class="cta-button" onclick="scrollToForm()">Начать обучение</button>
+            </div>
+            <div class="teacher-photo-large">
+                <div class="teacher-photo-placeholder large">
+                    <span>Фото преподавателя</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <h2>Отзывы выпускников</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text">«После курса устроилась junior дизайнером в стартап. Портфолио, которое собрала на курсе, сыграло решающую роль»</p>
+                    <div class="review-author">
+                        <strong>Мария Петрова</strong>
+                        <span>UI/UX Designer</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">«Анна — отличный преподаватель. Объясняет сложные вещи простым языком. Обратная связь всегда по делу»</p>
+                    <div class="review-author">
+                        <strong>Дмитрий Козлов</strong>
+                        <span>Product Designer</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">«Начал брать фриланс-заказы уже на 3 месяце обучения. Курс окупился еще до его завершения»</p>
+                    <div class="review-author">
+                        <strong>Алексей Иванов</strong>
+                        <span>Freelance Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-content">
+                    <h2>Запишитесь на курс</h2>
+                    <p class="form-subtitle">Оставьте заявку, и мы свяжемся с вами в течение 24 часов</p>
+                    <form class="application-form" onsubmit="handleSubmit(event)">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <button type="submit" class="cta-button full-width">Отправить заявку</button>
+                    </form>
+                    <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                </div>
+                <div class="form-benefits">
+                    <h3>Что вы получите:</h3>
+                    <ul>
+                        <li>Доступ к платформе на 12 месяцев</li>
+                        <li>Все материалы курса</li>
+                        <li>Проверку домашних заданий</li>
+                        <li>Сертификат о прохождении</li>
+                        <li>Поддержку в карьере</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Design School</div>
+            <div class="footer-links">
+                <a href="#program">Программа</a>
+                <a href="#benefits">Преимущества</a>
+                <a href="#teacher">Преподаватель</a>
+                <a href="#reviews">Отзывы</a>
+            </div>
+            <div class="footer-contacts">
+                <p>Email: info@designschool.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="design-school.js"></script>
+</body>
+</html>
