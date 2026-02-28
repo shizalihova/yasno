@@ -147,7 +147,7 @@ section:nth-child(odd) {
 }
 
 #hero {
-    background-image: url('images/LOGOT.PNG');
+    background-image: url('images/LOGOT.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
